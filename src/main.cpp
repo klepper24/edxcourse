@@ -1,5 +1,5 @@
 #include <iostream>
-#include "lab2.hpp"
+#include "student.hpp"
 
 
 int main(){
