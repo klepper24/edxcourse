@@ -18,7 +18,7 @@ class Student{
 public:
 
 	Student() {};
-	Student(string fName, string lName, int ag, string addr, string ci, int pho)
+	Student(string fName, string lName, int ag, string addr, string ci, int pho);
 	~Student() {};
 	string getFirstName();
 	string getLastName();
@@ -26,6 +26,7 @@ public:
 	string getAddress();
 	string getCity();
 	int getPhone();
+	void sitInClass();
 
 };
 
