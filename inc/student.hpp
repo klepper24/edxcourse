@@ -17,15 +17,16 @@ class Student{
 
 public:
 
-	Student() {};
-	Student(string fName, string lName, int ag, string addr, string ci, int pho)
-	~Student() {};
+	Student() {}
+	Student(string fName, string lName, int ag, string addr, string ci, int pho);
+	~Student() {}
 	string getFirstName();
 	string getLastName();
 	int getAge();
 	string getAddress();
 	string getCity();
 	int getPhone();
+	void sitInClass();
 
 };
 

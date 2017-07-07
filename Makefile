@@ -5,14 +5,20 @@ KOM=g++
 __start__: program
 	./program
 
-program: obj obj/main.o obj/lab2.o
-	$(KOM) -Wall -o program obj/main.o obj/lab2.o
+program: obj obj/main.o obj/student.o obj/teacher.o obj/course.o
+	$(KOM) -Wall -o program obj/main.o obj/student.o obj/teacher.o obj/course.o
 
-obj/main.o: inc/lab2.hpp src/main.cpp
+obj/main.o: inc/student.hpp inc/teacher.hpp inc/course.hpp src/main.cpp
 	$(KOM) -c -Wall -pedantic -iquote inc -o obj/main.o src/main.cpp
 
-obj/lab2.o: inc/lab2.hpp src/lab2.cpp
-	$(KOM) -c -Wall -pedantic -iquote inc -o obj/lab2.o src/lab2.cpp
+obj/student.o: inc/student.hpp src/student.cpp
+	$(KOM) -c -Wall -pedantic -iquote inc -o obj/student.o src/student.cpp
+
+obj/teacher.o: inc/teacher.hpp src/teacher.cpp
+	$(KOM) -c -Wall -pedantic -iquote inc -o obj/teacher.o src/teacher.cpp
+
+obj/course.o: inc/course.hpp src/course.cpp
+	$(KOM) -c -Wall -pedantic -iquote inc -o obj/course.o src/course.cpp
 
 
 obj:

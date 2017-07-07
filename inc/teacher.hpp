@@ -1,5 +1,5 @@
 #ifndef teacher_hpp
-#define techaer_hpp
+#define teacher_hpp
 
 #include <iostream>
 #include <string>
