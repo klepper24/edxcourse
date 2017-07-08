@@ -33,5 +33,5 @@ help:
 	@echo  " w nastepujacy sposob:"
 	@echo  
 	@echo  "  make        - powoduje kompilacje, konsolidacje i uruchomienie programu,"
-	@echo  "  make clean  - powoduj usuniecie produktow komilacji i konsolidacji."
+	@echo  "  make clean  - powoduj usuniecie produktow kompilacji i konsolidacji."
 	@echo

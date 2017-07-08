@@ -47,7 +47,7 @@ void Teacher::gradeStudent() {
 
 }
 
-void sitInClass() {
+void Teacher::sitInClass() {
 
 	cout << "Sitting at front of class" << endl;
 
