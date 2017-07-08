@@ -1,12 +1,12 @@
-#ifndef student_hpp
-#define student_hpp
+#ifndef teacher_hpp
+#define teacher_hpp
 
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-class Student{
+class Teacher{
 
 	string firstName;
 	string lastName;
@@ -17,18 +17,20 @@ class Student{
 
 public:
 
-	Student() {}
-	Student(string fName, string lName, int ag, string addr, string ci, int pho);
-	~Student() {}
+	Teacher() {}
+	Teacher(string fName, string lName, int ad, string addr, string ci, int pho);
+	~Teacher() {}
 	string getFirstName();
 	string getLastName();
 	int getAge();
 	string getAddress();
 	string getCity();
 	int getPhone();
+	void gradeStudent();
 	void sitInClass();
 
 };
+
 
 
 #endif
